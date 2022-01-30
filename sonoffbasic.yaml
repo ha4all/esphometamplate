@@ -7,9 +7,7 @@ esphome:
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
-
-
-      
+  
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
@@ -90,21 +88,7 @@ switch:
     id: blue_led
     pin:
       number: GPIO13
-      inverted: True
-      
-      
-### to use as light switch 
-output:
-  - platform: gpio
-    pin: GPIO12
-    id: relayasswitch
-
-light:
-  - platform: binary
-    name: "My Light"
-    id: light_1
-    output: relayasswitch
-###
+      inverted: True 
     
 sensor:
   - platform: uptime
@@ -112,8 +96,6 @@ sensor:
   - platform: wifi_signal
     name: "${name} WiFi Signal Sensor"
     update_interval: 60s
-  
-    
     
 button:
   - platform: restart
