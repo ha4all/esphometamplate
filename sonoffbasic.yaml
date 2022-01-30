@@ -14,7 +14,7 @@ esphome:
   # configuration and updates.
   project:
     name: ha4all.esphome-for-sonoffbasic
-    version: "0.6"
+    version: "0.7"
 
 
   platform: ESP8266
@@ -119,4 +119,4 @@ text_sensor:
     scan_results:
       name: ${name} Latest Scan Results    
   - platform: version
-    name: ${name} ESPHome Version 1234
+    name: ${name} ESPHome Version 1234-7
