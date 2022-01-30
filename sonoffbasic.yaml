@@ -91,7 +91,20 @@ switch:
     pin:
       number: GPIO13
       inverted: True
+      
+      
+### to use as light switch 
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: relay-as-switch
 
+light:
+  - platform: binary
+    name: "My Light"
+    id: light_1
+    output: relay-as-switch
+###
     
 sensor:
   - platform: uptime
