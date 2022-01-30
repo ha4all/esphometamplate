@@ -119,4 +119,4 @@ text_sensor:
     scan_results:
       name: ${name} Latest Scan Results    
   - platform: version
-    name: ${name} ESPHome Version 1234-7
+    name: "ESPHome Version 1234-7"
