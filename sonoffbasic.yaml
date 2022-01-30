@@ -97,13 +97,13 @@ switch:
 output:
   - platform: gpio
     pin: GPIO12
-    id: relay-as-switch
+    id: relayasswitch
 
 light:
   - platform: binary
     name: "My Light"
     id: light_1
-    output: relay-as-switch
+    output: relayasswitch
 ###
     
 sensor:
